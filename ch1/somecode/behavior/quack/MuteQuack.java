@@ -1,4 +1,4 @@
-package ch1.behavior.quack;
+package ch1.somecode.behavior.quack;
 
 public class MuteQuack implements QuackBehavior{
     public void quack() {

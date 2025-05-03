@@ -1,10 +1,10 @@
-package ch1;
+package ch1.somecode;
 
-import ch1.behavior.fly.FlyNoWay;
-import ch1.behavior.fly.FlyWithWings;
-import ch1.behavior.quack.MuteQuack;
-import ch1.behavior.quack.Quack;
-import ch1.behavior.quack.Squeak;
+import ch1.somecode.behavior.fly.FlyNoWay;
+import ch1.somecode.behavior.fly.FlyWithWings;
+import ch1.somecode.behavior.quack.MuteQuack;
+import ch1.somecode.behavior.quack.Quack;
+import ch1.somecode.behavior.quack.Squeak;
 
 public class DuckSimulator {
     public static void main(String[] args) {

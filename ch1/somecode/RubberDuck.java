@@ -1,7 +1,7 @@
-package ch1;
+package ch1.somecode;
 
-import ch1.behavior.fly.FlyBehavior;
-import ch1.behavior.quack.QuackBehavior;
+import ch1.somecode.behavior.fly.FlyBehavior;
+import ch1.somecode.behavior.quack.QuackBehavior;
 
 public class RubberDuck extends Duck{
 
