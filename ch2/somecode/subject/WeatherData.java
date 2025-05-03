@@ -8,7 +8,7 @@ import ch2.somecode.observer.Observer;
 public class WeatherData implements Subject{
 
     private List<Observer> _observersList;
-    private float _temparature;
+    private float _temperature;
     private float _humidity;
     private float _pressure;
 
@@ -30,7 +30,7 @@ public class WeatherData implements Subject{
     @Override
     public void notifyObservers() {
         for (Observer observer : _observersList) {
-            observer.update(_temparature, _humidity, _pressure);
+            observer.update(_temperature, _humidity, _pressure);
         }
     }
     
@@ -38,8 +38,8 @@ public class WeatherData implements Subject{
         notifyObservers();
     }
 
-    public void setMeasurements(float temparature, float humidity, float pressure) {
-        this._temparature = temparature;
+    public void setMeasurements(float temperature, float humidity, float pressure) {
+        this._temperature = temperature;
         this._humidity = humidity;
         this._pressure = pressure;
 

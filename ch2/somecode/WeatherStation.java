@@ -3,6 +3,7 @@ package ch2.somecode;
 import ch2.somecode.displays.DisplayElement;
 import ch2.somecode.displays.CurrentConditionsDisplay;
 import ch2.somecode.displays.HeatIndexDisplay;
+import ch2.somecode.displays.StatisticDisplay;
 import ch2.somecode.subject.WeatherData;
 
 public class WeatherStation {
@@ -10,6 +11,7 @@ public class WeatherStation {
         WeatherData weatherData = new WeatherData();
 
         DisplayElement _currentConditionsDisplay = new CurrentConditionsDisplay(weatherData);
+        DisplayElement _statisticDisplay = new StatisticDisplay(weatherData);
         DisplayElement _heatIndexDisplay = new HeatIndexDisplay(weatherData);
 
         weatherData.setMeasurements(80f, 65f, 30.4f);
