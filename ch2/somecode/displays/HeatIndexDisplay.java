@@ -1,16 +1,16 @@
 package ch2.somecode.displays;
 
 import ch2.somecode.observer.Observer;
-import ch2.somecode.subject.Subject;
+import ch2.somecode.subject.WeatherData;
 
 public class HeatIndexDisplay implements Observer, DisplayElement {
 
-    private Subject _weatherData;
+    private WeatherData _weatherData;
     private float _temperature;
     private float _humidity;
     private float _heatIndex;
 
-    public HeatIndexDisplay(Subject weatherData) {
+    public HeatIndexDisplay(WeatherData weatherData) {
         this._weatherData = weatherData;
         this._weatherData.registerObserver(this);
     }
@@ -20,10 +20,19 @@ public class HeatIndexDisplay implements Observer, DisplayElement {
         System.out.println("Heat Index: " + _heatIndex);
     }
 
+    // @Override
+    // public void update(float temperature, float humidity, float pressure) {
+    //     this._temperature = temperature;
+    //     this._humidity = humidity;
+
+    //     updateHeatIndex();
+    //     display();
+    // }
+
     @Override
-    public void update(float temperature, float humidity, float pressure) {
-        this._temperature = temperature;
-        this._humidity = humidity;
+    public void update() {
+        this._temperature = this._weatherData.getTemperature();
+        this._humidity = this._weatherData.getHumidity();
 
         updateHeatIndex();
         display();

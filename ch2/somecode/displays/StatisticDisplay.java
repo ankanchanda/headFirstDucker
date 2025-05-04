@@ -1,17 +1,17 @@
 package ch2.somecode.displays;
 
 import ch2.somecode.observer.Observer;
-import ch2.somecode.subject.Subject;
+import ch2.somecode.subject.WeatherData;
 
 public class StatisticDisplay implements Observer, DisplayElement {
-    private Subject _weatherData;
+    private WeatherData _weatherData;
     private float _maxTemperature;
     private float _minTemperature;
     private float _temperatureSum;
     private float _averageTemperature;
     private int _temperatureChangeCount;
 
-    public StatisticDisplay(Subject weatherData) {
+    public StatisticDisplay(WeatherData weatherData) {
         this._weatherData = weatherData;
         this._weatherData.registerObserver(this);
         _temperatureChangeCount = 0;
@@ -27,8 +27,20 @@ public class StatisticDisplay implements Observer, DisplayElement {
                 _minTemperature);
     }
 
+    // @Override
+    // public void update(float temperature, float humidity, float pressure) {
+    //     _temperatureChangeCount += 1;
+    //     _temperatureSum += temperature;
+    //     _maxTemperature = Math.max(_maxTemperature, temperature);
+    //     _minTemperature = Math.min(_minTemperature, temperature);
+    //     updateAverageTemperature();
+
+    //     display();
+    // }
+
     @Override
-    public void update(float temperature, float humidity, float pressure) {
+    public void update() {
+        float temperature = this._weatherData.getTemperature();
         _temperatureChangeCount += 1;
         _temperatureSum += temperature;
         _maxTemperature = Math.max(_maxTemperature, temperature);
