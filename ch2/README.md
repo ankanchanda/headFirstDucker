@@ -44,3 +44,19 @@ Publishers + Subscribers = Observer Pattern
 
 The Observer Pattern defines a one-to-many dependency between objects so that when
 one object changes state, all of its dependents are notified and updated automatically.
+
+### Power of loosely coupling
+When two objects are loosely coupled, they can interact, but they typically have very little knowledge of each other.
+
+1. First, the only thing the subject knows about an observer is that it implements a certain interface (the Observer interface)
+2. We can add new observers at any time.
+3. We never need to modify the subject to add new types of observers.
+4. We can reuse subjects or observers independently of each other.
+5. Changes to either the subject or an observer will not affect the other.
+
+### Issue with the above
+The above was only for updating and pusing when there is an update. Howver, it might happen that the observers only need a little bit of the state rather than forcing to get all the data.
+
+### Java's built-in Observer Pattern
+The most general is the Observer interface and the Observable class in the `java.util` package.
+You can also implement either a push or pull style of update to your observers.
