@@ -37,3 +37,6 @@ Designs that are resilient to change and flexible enough to take on new function
 pass around a decorated object in place of the original (wrapped) object.
 4. Objects can be decorated at any time, so we can decorate objects dynamically at
 runtime with as many decorators as we like.
+
+## Flaw
+Sometimes adding a lot of small classes to a design, which occasionally results in a design that’s less than straightforward for others to understand.
