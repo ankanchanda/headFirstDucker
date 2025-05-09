@@ -1,10 +1,10 @@
 Putting Learnings into code. From the ducker book: head first design patterns.
 
 ## Chapters
-- ch1 - Intro to design patterns and Strategy
-- ch2 - Observer
-- ch3 - Decorator
-- ch4 - Factory
+- [ch1 - Intro to design patterns and Strategy](./ch1)
+- [ch2 - Observer](./ch2/)
+- [ch3 - Decorator](./ch3/)
+- [ch4 - Factory](./ch4)
 
 ## OO Basics
 1. Abstraction
