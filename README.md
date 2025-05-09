@@ -1,5 +1,11 @@
 Putting Learnings into code. From the ducker book: head first design patterns.
 
+## Chapters
+- ch1 - Intro to design patterns and Strategy
+- ch2 - Observer
+- ch3 - Decorator
+- ch4 - Factory
+
 ## OO Basics
 1. Abstraction
 2. Encapsulation
@@ -25,8 +31,3 @@ The Decorator Pattern attaches additional responsibilities to an object dynamica
 ## Design Principles
 ### The Open-Closed Principal
 Classes should be open for extension, but closed for modification.
-
-## Chapters
-- ch1 - Intro to design patterns and Strategy
-- ch2 - Observer
-- ch3 - Decorator
