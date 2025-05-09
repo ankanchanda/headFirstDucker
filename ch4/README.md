@@ -31,6 +31,9 @@ code that makes use of lots of concrete classes, code may have to be changed as 
 ### Solution:
 identify the aspects that vary and separate them from what stays the same.
 
+
+
+[SomeCode:](https://github.com/ankanchanda/headFirstDucker/commit/056893478d0767ad39446e15cee9b704761120fc)
 ```
 Pizza orderPizza(String type) {
     Pizza pizza;
