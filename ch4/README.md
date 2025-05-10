@@ -3,7 +3,7 @@
 ### Situation
 Tying your code to a concrete class can make it more fragile and less flexible.
 
-`Duck duck = new MallardDuck();`: We want to use abstact types to keep code flexible but we have to create an instance of a concrete class
+`Duck duck = new MallardDuck();`: We want to use abstract types to keep code flexible but we have to create an instance of a concrete class
 
 When we have a whole set of related concrete classes, decision of which to instantiate is made at runtime, ending up like this:
 ```
@@ -61,3 +61,24 @@ Defining a simple factory as a static method should be fine, since it doesn’t 
 NOTE: we can create it static but then we cannot extend or change the behavior of create method.
 
 SomeCode: [cb901b8](https://github.com/ankanchanda/headFirstDucker/commit/cb901b8a9de13dd74603b4ecbbd752756ecc8421)
+
+### New Issue
+Now the franchise wants to expand its outlets to multiple regions. And the challenge here is to provide regionally different pizza. 
+
+Each franchise might want to offer different styles of pizzas depending on where the franchise store is located and the tastes of the local pizza connoisseurs.
+
+#### A Solution
+If we take out SimplePizzaFactory and create three different factories—NYPizzaFactory, ChicagoPizzaFactory, and CaliforniaPizzaFactory, then we can just compose the PizzaStore with the appropriate factory and a franchise is good to go. That’s one approach.
+
+Something like:
+```
+NYPizzaFactory nyFactory = new NYPizzaFactory();
+PizzaStore nyStore = new PizzaStore(nyFactory);
+nyStore.orderPizza("Veggie");
+
+ChicagoPizzaFactory chicagoFactory = new ChicagoPizzaFactory();
+PizzaStore chicagoStore = new PizzaStore(chicagoFactory);
+chicagoStore.orderPizza("Veggie");
+```
+
+But the issue is that, there is little control over the factories. In order to avoid this issue, we need a `FRAMEWORK` that ties the store and the pizza creation together.
