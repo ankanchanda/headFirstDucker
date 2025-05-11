@@ -1,24 +1,15 @@
 package ch4.somecode.pizza;
 
-public class VeggiePizza implements Pizza {
-
-    @Override
-    public void prepare() {
-        System.out.println("Veggie Pizza is getting prepared");
-    }
-
-    @Override
-    public void bake() {
-        System.out.println("Veggie Pizza is getting baked");
-    }
-
-    @Override
-    public void cut() {
-        System.out.println("Veggie Pizza is getting cut");
-    }
-
-    @Override
-    public void box() {
-        System.out.println("Veggie Pizza is getting packed");
-    }
+public class VeggiePizza extends Pizza {
+    public VeggiePizza() {
+		name = "Veggie Pizza";
+		dough = "Crust";
+		sauce = "Marinara sauce";
+		toppings.add("Shredded mozzarella");
+		toppings.add("Grated parmesan");
+		toppings.add("Diced onion");
+		toppings.add("Sliced mushrooms");
+		toppings.add("Sliced red pepper");
+		toppings.add("Sliced black olives");
+	}
 }
