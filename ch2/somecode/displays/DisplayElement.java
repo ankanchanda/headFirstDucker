@@ -1,4 +1,4 @@
-package ch2.somecode.displays;
+package ch2.someCode.displays;
 
 public interface DisplayElement {
     public void display();

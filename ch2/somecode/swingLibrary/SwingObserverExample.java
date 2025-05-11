@@ -1,4 +1,4 @@
-package ch2.somecode.swingLibrary;
+package ch2.someCode.swingLibrary;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;

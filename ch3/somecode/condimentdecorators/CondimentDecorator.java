@@ -1,6 +1,6 @@
-package ch3.somecode.condimentdecorators;
+package ch3.someCode.condimentDecorators;
 
-import ch3.somecode.Beverage;
+import ch3.someCode.Beverage;
 
 public abstract class CondimentDecorator extends Beverage{
     Beverage beverage;

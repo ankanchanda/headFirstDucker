@@ -1,4 +1,4 @@
-package ch2.somecode.observer;
+package ch2.someCode.observer;
 
 public interface Observer {
     public void update();

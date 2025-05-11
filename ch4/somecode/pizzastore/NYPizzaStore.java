@@ -1,8 +1,8 @@
-package ch4.somecode.pizzastore;
+package ch4.someCode.pizzastore;
 
-import ch4.somecode.pizza.Pizza;
-import ch4.somecode.pizza.franchiseBased.NYStyleCheesePizza;
-import ch4.somecode.pizza.franchiseBased.NYStylePepperoniPizza;
+import ch4.someCode.pizza.Pizza;
+import ch4.someCode.pizza.franchiseBased.NYStyleCheesePizza;
+import ch4.someCode.pizza.franchiseBased.NYStylePepperoniPizza;
 
 public class NYPizzaStore extends PizzaStore {
 

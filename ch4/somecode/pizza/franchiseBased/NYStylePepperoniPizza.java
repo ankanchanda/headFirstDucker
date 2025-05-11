@@ -1,6 +1,6 @@
-package ch4.somecode.pizza.franchiseBased;
+package ch4.someCode.pizza.franchiseBased;
 
-import ch4.somecode.pizza.Pizza;
+import ch4.someCode.pizza.Pizza;
 
 public class NYStylePepperoniPizza extends Pizza {
 

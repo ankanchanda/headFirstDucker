@@ -1,4 +1,4 @@
-package ch4.somecode.pizza;
+package ch4.someCode.pizza;
 
 import java.util.ArrayList;
 import java.util.List;

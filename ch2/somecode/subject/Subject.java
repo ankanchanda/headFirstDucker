@@ -1,6 +1,6 @@
-package ch2.somecode.subject;
+package ch2.someCode.subject;
 
-import ch2.somecode.observer.Observer;
+import ch2.someCode.observer.Observer;
 
 public interface Subject {
     public void registerObserver(Observer observer);

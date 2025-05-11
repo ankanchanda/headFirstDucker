@@ -1,4 +1,4 @@
-package ch3.somecode;
+package ch3.someCode;
 
 public class DarkRoast extends Beverage {
 

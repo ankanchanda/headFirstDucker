@@ -1,4 +1,4 @@
-package ch1.somecode.behavior.fly;
+package ch1.someCode.behavior.fly;
 
 public interface FlyBehavior {
     public void fly();

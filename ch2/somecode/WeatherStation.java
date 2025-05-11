@@ -1,10 +1,10 @@
-package ch2.somecode;
+package ch2.someCode;
 
-import ch2.somecode.displays.DisplayElement;
-import ch2.somecode.displays.CurrentConditionsDisplay;
-import ch2.somecode.displays.HeatIndexDisplay;
-import ch2.somecode.displays.StatisticDisplay;
-import ch2.somecode.subject.WeatherData;
+import ch2.someCode.displays.CurrentConditionsDisplay;
+import ch2.someCode.displays.DisplayElement;
+import ch2.someCode.displays.HeatIndexDisplay;
+import ch2.someCode.displays.StatisticDisplay;
+import ch2.someCode.subject.WeatherData;
 
 public class WeatherStation {
     public static void main(String[] args) {

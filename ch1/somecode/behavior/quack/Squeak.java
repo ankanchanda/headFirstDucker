@@ -1,4 +1,4 @@
-package ch1.somecode.behavior.quack;
+package ch1.someCode.behavior.quack;
 
 public class Squeak implements QuackBehavior {
     public void quack () {

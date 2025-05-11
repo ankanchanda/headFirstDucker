@@ -1,8 +1,8 @@
-package ch3.somecode;
+package ch3.someCode;
 
-import ch3.somecode.condimentdecorators.Mocha;
-import ch3.somecode.condimentdecorators.Soy;
-import ch3.somecode.condimentdecorators.Whip;
+import ch3.someCode.condimentDecorators.Mocha;
+import ch3.someCode.condimentDecorators.Soy;
+import ch3.someCode.condimentDecorators.Whip;
 
 public class StarbuzzCafe {
     public static void main(String[] args) {

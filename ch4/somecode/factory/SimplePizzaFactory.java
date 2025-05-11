@@ -1,10 +1,10 @@
-package ch4.somecode.factory;
+package ch4.someCode.factory;
 
-import ch4.somecode.pizza.CheesePizza;
-import ch4.somecode.pizza.ClamPizza;
-import ch4.somecode.pizza.PepperoniPizza;
-import ch4.somecode.pizza.Pizza;
-import ch4.somecode.pizza.VeggiePizza;
+import ch4.someCode.pizza.CheesePizza;
+import ch4.someCode.pizza.ClamPizza;
+import ch4.someCode.pizza.PepperoniPizza;
+import ch4.someCode.pizza.Pizza;
+import ch4.someCode.pizza.VeggiePizza;
 
 public class SimplePizzaFactory {
     

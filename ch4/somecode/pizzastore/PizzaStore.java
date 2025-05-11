@@ -1,5 +1,5 @@
-package ch4.somecode.pizzastore;
-import ch4.somecode.pizza.Pizza;
+package ch4.someCode.pizzastore;
+import ch4.someCode.pizza.Pizza;
 
 public abstract class PizzaStore {
 

@@ -1,4 +1,4 @@
-package ch4.somecode.pizza;
+package ch4.someCode.pizza;
 
 public class PepperoniPizza extends Pizza{
     public PepperoniPizza() {
