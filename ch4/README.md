@@ -81,4 +81,47 @@ PizzaStore chicagoStore = new PizzaStore(chicagoFactory);
 chicagoStore.orderPizza("Veggie");
 ```
 
-But the issue is that, there is little control over the factories. In order to avoid this issue, we need a `FRAMEWORK` that ties the store and the pizza creation together.
+<h4>Issue</h4>
+There is little control over the factories. In order to avoid this issue, we need a `FRAMEWORK` that ties the store and the pizza creation together.
+
+#### Solution to above issue
+We create the PizzaStore as an abstract class with abstract method create Pizza which individual extending class can return the pizza instance.
+
+- PizzaStore
+    - orderPizza()
+    - abstract createPizza()
+
+- NYStylePizzaStore: PizzaStore
+    - createPizza()
+
+- ChicagoStylePizzaStore: PizzaStore
+    - createPizza()
+
+PizzaStore:
+```
+public abstract class PizzaStore {
+
+    public Pizza orderPizza(String type) {
+        Pizza pizza = createPizza(type);
+
+        pizza.prepare();
+        pizza.bake();
+        pizza.cut();
+        pizza.box();
+
+        return pizza;
+    }
+
+    // This allows the subclass to decide the the pizza instance.
+    protected abstract Pizza createPizza(String type);
+}
+```
+A factory method handles object creation and encapsulates it in a subclass. This decouples the client code in the superclass from the object creation code in the subclass.
+
+How do we order pizza?
+```
+PizzaStore nyPizzaStore = new NYPizzaStore();
+nyPizzaStore.orderPizza("cheese");
+```
+
+The orderPizza then calls `createPizza("cheese")`
