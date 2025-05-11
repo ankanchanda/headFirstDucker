@@ -1,9 +1,9 @@
 package ch4.someCode;
 
 import ch4.someCode.pizza.Pizza;
-import ch4.someCode.pizzastore.ChicagoPizzaStore;
-import ch4.someCode.pizzastore.NYPizzaStore;
-import ch4.someCode.pizzastore.PizzaStore;
+import ch4.someCode.pizzaStore.ChicagoPizzaStore;
+import ch4.someCode.pizzaStore.NYPizzaStore;
+import ch4.someCode.pizzaStore.PizzaStore;
 
 public class PizzaTestDrive {
  

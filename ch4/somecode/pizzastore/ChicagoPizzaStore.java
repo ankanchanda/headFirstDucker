@@ -1,4 +1,4 @@
-package ch4.someCode.pizzastore;
+package ch4.someCode.pizzaStore;
 
 import ch4.someCode.pizza.Pizza;
 import ch4.someCode.pizza.franchiseBased.ChicagoStylePepperoniPizza;
