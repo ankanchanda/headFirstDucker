@@ -1,21 +1,38 @@
 package ch4.somecode;
 
-import ch4.somecode.factory.SimplePizzaFactory;
 import ch4.somecode.pizza.Pizza;
+import ch4.somecode.pizzastore.ChicagoPizzaStore;
+import ch4.somecode.pizzastore.NYPizzaStore;
 import ch4.somecode.pizzastore.PizzaStore;
 
 public class PizzaTestDrive {
  
 	public static void main(String[] args) {
-		SimplePizzaFactory factory = new SimplePizzaFactory();
-		PizzaStore store = new PizzaStore(factory);
-
-		Pizza pizza = store.orderPizza("cheese");
-		System.out.println("We ordered a " + pizza.getName() + "\n");
-		System.out.println(pizza);
+		PizzaStore nyStore = new NYPizzaStore();
+		PizzaStore chicagoStore = new ChicagoPizzaStore();
  
-		pizza = store.orderPizza("veggie");
-		System.out.println("We ordered a " + pizza.getName() + "\n");
-		System.out.println(pizza);
+		Pizza pizza = nyStore.orderPizza("cheese");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("cheese");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		pizza = nyStore.orderPizza("clam");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("clam");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		pizza = nyStore.orderPizza("pepperoni");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("pepperoni");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
+
+		pizza = nyStore.orderPizza("veggie");
+		System.out.println("Ethan ordered a " + pizza.getName() + "\n");
+ 
+		pizza = chicagoStore.orderPizza("veggie");
+		System.out.println("Joel ordered a " + pizza.getName() + "\n");
 	}
 }
