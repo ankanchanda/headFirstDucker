@@ -1,6 +1,8 @@
 package ch4.somecode;
 
+import ch4.somecode.factory.SimplePizzaFactory;
 import ch4.somecode.pizza.Pizza;
+import ch4.somecode.pizzastore.PizzaStore;
 
 public class PizzaTestDrive {
  

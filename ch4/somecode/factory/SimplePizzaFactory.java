@@ -1,4 +1,4 @@
-package ch4.somecode;
+package ch4.somecode.factory;
 
 import ch4.somecode.pizza.CheesePizza;
 import ch4.somecode.pizza.ClamPizza;

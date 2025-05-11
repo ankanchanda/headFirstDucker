@@ -1,4 +1,5 @@
-package ch4.somecode;
+package ch4.somecode.pizzastore;
+import ch4.somecode.factory.SimplePizzaFactory;
 import ch4.somecode.pizza.Pizza;
 
 public class PizzaStore {
