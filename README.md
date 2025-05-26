@@ -26,7 +26,10 @@ Defines a family of algorithms, encapsulates each one and make them interchangea
 Defines a one-to-many dependency between objects so that when one object changes state, all its dependents are notified and updated automatically.
 
 ### Decorator
-The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to subclassing for extending functionality.
+The Decorator Pattern attaches additional responsibilities to an object dynamically. Decorators provide a flexible alternative to sub-classing for extending functionality.
+
+### Factory-Method
+The Factory Method Pattern defines an interface for creating an object, but lets subclasses decide which class to instantiate. Factory Method lets a class defer instantiation to subclasses.
 
 ## Design Principles
 ### The Open-Closed Principal

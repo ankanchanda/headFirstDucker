@@ -127,3 +127,81 @@ nyPizzaStore.orderPizza("cheese");
 The orderPizza then calls `createPizza("cheese")`
 
 SomeCode: [1602af3](https://github.com/ankanchanda/headFirstDucker/commit/1602af3eda47cacc7c4cedf46cec436bf1712bfe)
+
+
+### Factory Method Pattern
+The Factory Method Pattern encapsulates object creation by letting subclasses decide what objects to create.
+
+- The creator classes: Defines an abstract factory method that subclasses implement to produce products
+    - Contains code that depend on an abstract product which is produce by the subclass. The creator doesn't know which concrete product was produced.
+```
+// Creator class
+Class PizzaStore {
+    createPizza();
+    orderPizza();
+}
+```
+
+- Concrete Creators: Classes that produce products.
+```
+// Concrete creator
+class NYPizzaStore extends PizzaStore {
+    createPizza();
+}
+
+// Concrete creator
+class ChicagoPizzaStore extends PizzaStore {
+    createPizza();
+}
+```
+
+- The product classes: Factories produce products
+```
+class Pizza {}
+```
+
+- Concrete Product Classes
+```
+class NYStyleCheesePizza extends Pizza {}
+
+class NYStylePepperoniPizza extends Pizza {}
+
+class ChicagoStyleCheesePizza extends Pizza {}
+
+class ChicagoStylePepperoniPizza extends Pizza {}
+```
+
+The `NYPizzaStore` encapsulates all the knowledge about how to make NY-style pizza and the `ChicagoPizzaStore` encapsulates all the knowledge about how to make Chicago-style pizza.
+
+Abstract Creator class gives you an interface with a method for creating objects, also known as the “factory method.”
+
+```
+interface Product {
+}
+
+class ConcreteProduct implements Product {
+}
+
+abstract class Creator {
+    factoryMethod();
+    anOperation();
+}
+
+ConcreteCreator extends Creator {
+    // has ConcreteProduct
+    factoryMethod();
+}
+```
+
+Summary:
+- All products must implement the same interface so that the classes that use the products can refer to the interface, not the concrete class.
+
+- Creator is a class the contains the implementations for all of the methods to manipulate products, except for the factory method.
+
+- The abstract factoryMethod() is what all creator subclasses must implement
+
+- ConcreteCreator implements the factoryMethod() which is the method actually produces products.
+
+- ConcreteCreator is responsible for creating one or more concrete products. It is the only class that has the knowledge of how to create these products.
+
+
