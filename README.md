@@ -17,7 +17,6 @@ Putting Learnings into code. From the ducker book: head first design patterns.
 2. Favor composition over inheritance
 3. Program to interfaces, not implementations
 4. Strive for loosely coupled designs between objects that interact
-5. Depend upon abstractions. Do not depend upon concrete classes.
 
 ## OO Patterns
 ### Strategy
@@ -35,3 +34,6 @@ The Factory Method Pattern defines an interface for creating an object, but lets
 ## Design Principles
 ### The Open-Closed Principal
 Classes should be open for extension, but closed for modification.
+
+## The Dependency Inversion Principle
+Depend upon abstractions. Do not depend upon concrete classes.
