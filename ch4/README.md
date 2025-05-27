@@ -212,3 +212,11 @@ SomeCode: [3be1ea9](https://github.com/ankanchanda/headFirstDucker/commit/3be1ea
     - If the implementation of these classes changes, then it might have to modify in PizzaStore as well.
     - Every new kind of pizza that gets added creates another dependency for PizzaStore.
     - It creates all the pizza objects right in the PizzaStore class instead of delegating to a factory.
+
+### Principle
+Depend upon abstractions and not upon concrete classes.
+
+It suggests that high-level components should not depend on our low-level
+components; rather, they should both depend on abstractions.
+
+A high-level component is a behavior defined in terms of other low-level components. For example PizzaStore is a high-level component because it's behavior is defined in terms of pizzas- it creates all pizza objects, and prepares, bakes, cuts, etc..
