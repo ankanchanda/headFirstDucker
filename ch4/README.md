@@ -204,4 +204,11 @@ Summary:
 
 - ConcreteCreator is responsible for creating one or more concrete products. It is the only class that has the knowledge of how to create these products.
 
+SomeCode: [3be1ea9](https://github.com/ankanchanda/headFirstDucker/commit/3be1ea9b83bf5ddcd23b0d1e13d6df9bf8a004cb#diff-cb6d5076f5d222987153a2b36e6348205080f12dadcb2249306de5c696074c41)
 
+#### Issues
+- Due to direct instantiation of object, it's depending on the concrete classes.
+    - The version of the PizzaStore depends on all those pizza objects, because it's creating them directly.
+    - If the implementation of these classes changes, then it might have to modify in PizzaStore as well.
+    - Every new kind of pizza that gets added creates another dependency for PizzaStore.
+    - It creates all the pizza objects right in the PizzaStore class instead of delegating to a factory.
