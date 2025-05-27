@@ -13,10 +13,11 @@ Putting Learnings into code. From the ducker book: head first design patterns.
 4. Inheritance
 
 ## OO Principles
-1. Encapsulate what varries
+1. Encapsulate what varies
 2. Favor composition over inheritance
 3. Program to interfaces, not implementations
 4. Strive for loosely coupled designs between objects that interact
+5. Depend upon abstractions. Do not depend upon concrete classes.
 
 ## OO Patterns
 ### Strategy
