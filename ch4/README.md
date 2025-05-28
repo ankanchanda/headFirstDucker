@@ -220,3 +220,14 @@ It suggests that high-level components should not depend on our low-level
 components; rather, they should both depend on abstractions.
 
 A high-level component is a behavior defined in terms of other low-level components. For example PizzaStore is a high-level component because it's behavior is defined in terms of pizzas- it creates all pizza objects, and prepares, bakes, cuts, etc..
+
+### Guidelines to follow the principle
+This is a guideline to strive for, rather than a rule you should follow all the time.
+
+- No variable should hold a reference to a concrete class.
+    - Solution: Use a factory to get around that.
+- No class should derive from a concrete class.
+    - Derive from an abstraction like interface or abstract class
+- No method should override an implemented method of any of its base classes.
+    - Methods implemented in the base class are meant to be shared by all the subclasses.
+
