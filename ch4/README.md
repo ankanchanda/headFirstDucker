@@ -231,3 +231,9 @@ This is a guideline to strive for, rather than a rule you should follow all the 
 - No method should override an implemented method of any of its base classes.
     - Methods implemented in the base class are meant to be shared by all the subclasses.
 
+#### Reworking the pizza factory
+- Family of Ingredients
+    - New York uses one set of ingredients and Chicago another.
+    - figure out how to handle families of ingredients.
+- Building the ingredient factories
+    - build a factory which will be responsible for creating each ingredient in the ingredient family.
