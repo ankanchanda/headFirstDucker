@@ -237,3 +237,5 @@ This is a guideline to strive for, rather than a rule you should follow all the 
     - figure out how to handle families of ingredients.
 - Building the ingredient factories
     - build a factory which will be responsible for creating each ingredient in the ingredient family.
+
+SomeCode: [68384ca](https://github.com/ankanchanda/headFirstDucker/commit/68384ca201d72244eec41aebae54e4b2dc59abed)
