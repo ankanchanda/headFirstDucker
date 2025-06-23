@@ -239,3 +239,8 @@ This is a guideline to strive for, rather than a rule you should follow all the 
     - build a factory which will be responsible for creating each ingredient in the ingredient family.
 
 SomeCode: [68384ca](https://github.com/ankanchanda/headFirstDucker/commit/68384ca201d72244eec41aebae54e4b2dc59abed)
+
+#### Reworking the pizzas
+The Pizza code uses the factory it has been composed with to produce the ingredients used in the pizza. The ingredients produced depend on which factory we’re using. The Pizza class doesn’t care; it knows how to make pizzas.
+
+Now, it’s decoupled from the differences in regional ingredients and can be easily reused when there are factories.
