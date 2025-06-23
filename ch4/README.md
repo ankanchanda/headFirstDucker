@@ -244,3 +244,5 @@ SomeCode: [68384ca](https://github.com/ankanchanda/headFirstDucker/commit/68384c
 The Pizza code uses the factory it has been composed with to produce the ingredients used in the pizza. The ingredients produced depend on which factory we’re using. The Pizza class doesn’t care; it knows how to make pizzas.
 
 Now, it’s decoupled from the differences in regional ingredients and can be easily reused when there are factories.
+
+SomeCode: [cefe7f5](https://github.com/ankanchanda/headFirstDucker/commit/cefe7f58c4e276cb8b3ab71ef3aececb3e39b567)
