@@ -1,4 +1,4 @@
-# The observer pattern
+# The factory pattern
 
 ### Situation
 Tying your code to a concrete class can make it more fragile and less flexible.
